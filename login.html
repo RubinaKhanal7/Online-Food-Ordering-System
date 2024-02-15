@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<style type="text/css">
+        body{
+            background-image: url('pic16.jpg');
+            background-size: cover;
+        }
+		.form1{
+                color: white;
+                font-size: 20px;
+                 background-color: wheat;
+                 font-weight: bold;
+                 float: right;
+                 box-sizing: border-box;
+                 border-radius: 5px;
+                 border: 1px solid #ccc;
+                 background-color: #1B2631;
+             }
+             .name{
+                width: 60%;
+                font-size: 15px;
+                text-align: justify;
+                height: 40px;
+             }
+             .login1{
+                 width: 100px;
+                font-size: 15px;
+                text-align: justify;
+                height: 40px;
+                background-color: #04AA6D;
+             }
+             .Cancel{
+                width: 100px;
+                font-size: 15px;
+                text-align: justify;
+                height: 40px;
+                background-color: #f44336;
+             }
+
+              .register{
+                color: white;
+                font-size: 20px;
+                 font-weight: bold;
+                 float: left;
+                 box-sizing: border-box;
+                 border-radius: 5px;
+                 border: 1px solid #ccc;
+                 background-color: #1B2631;
+                 
+             }
+
+             .form2{
+                
+                width: 60%;
+                font-size: 15px;
+                text-align: justify;
+                height: 40px;
+             }
+             .registerbtn{
+                width: 100px;
+                font-size: 15px;
+                text-align: center;
+                height: 40px;
+                background-color: #8D6E63;
+             }
+	</style>
+</head>
+<script type="text/javascript">
+    function login(){
+        location.href="home.html";
+    }
+
+    function validation(){
+        name=document.validation.name.value;
+        password=document.validation.password.value;
+        var statusText="";
+        if(name==""){
+            alert("Please Enter Your Name");
+            return false;
+        }
+        if(password==""){
+            alert("Please Enter Your Password");
+            return false;
+        }
+        return(document.getElementById('result').innerHTML=name+""+password+""+statusText);
+    }
+
+        </script>
+<body>
+	<div class="form1" id="4">
+         <center>
+        <form>
+            <center><br><br>
+               <h3 style="color: #0D47A1; text-decoration: underline;"> LOGIN TO YOUR ACCOUNT</h3>
+        <br>
+            <br>
+              <label>Username:</label><br>
+              <input type="text" class="name" placeholder="Enter Username" name="name"><br><br>
+        <label>Password:</label><br>
+              <input type="password" class="name" placeholder="Enter Password" name="password"><br><br>
+                 <button type="button"  class="login1" onclick="login();">
+                <center>Login
+                </center></button>
+                 <button type="submit"  class="Cancel" onclick="validation();">
+       <center> Cancel</center></button><br><br>
+                <label>&nbsp; &nbsp;
+
+       Remember me <input type="checkbox" checked="checked" name="remember">
+           
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#">Forgot Password?</a>
+                </label><br><br>
+</center>  
+        </form>
+
+           </div>
+
+       <div class="register" id="5">
+        <h2><p style="color: #E64A19;">Don't have account?</p></h2>
+<p style="margin-left: 5%;">Please fill in this form to create an account.</p>
+            <center>
+        <form>
+            <center>
+              <h3 style="text-decoration: underline; color: #E91E63;">  REGISTRATION FORM</h3>
+        
+      
+    <label><b>Username:</b></label><br>
+    <input type="text" placeholder="Enter Username" name="name" class="form2" required><br><br>
+
+    <label><b>Password:</b></label><br>
+    <input type="password" placeholder="Enter Password" name="password" class="form2" required><br><br>
+
+   <label><b>Confirm Password:</b></label><br>
+    <input type="password" placeholder="Confirm Password" name="psw-confirm" class="form2" required><br><br>
+    <br>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy.</a></p>
+    <button type="submit" class="registerbtn" >Register</button><br><br>
+       </div>
+
+       
+</body>
+</html>

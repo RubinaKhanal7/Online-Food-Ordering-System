@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style type="text/css">
+		 *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+     }
+     body{
+        background-color: white;
+     }
+
+     h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+        color:black;
+     }
+.columns {
+  float: left;
+  width: 50%;
+  padding: 2px 0 0 30px;
+}
+
+/* Clearfix (clear floats) */
+.ro::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 2px 0 0 30px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.topbtn {
+  background-color: #E67E22;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.topbtn:hover {
+  background-color: #F08080;
+}
+
+.logreg{
+    margin-left: 58%;
+    margin-top:0;
+}
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url('pic1.jpg');
+        background-size: cover;
+        height:800px;
+        margin-bottom: 50px;
+        font-size: 55px;
+        font-weight: bold;
+        color: white;
+        font-family: Curlz MT;
+        animation: slider 15s infinite linear;
+}
+
+
+           .text{
+        background-image: url('pic1.jpg');
+        background-size: cover;
+        height:800px;
+        margin-bottom: 50px;
+        font-size: 55px;
+        font-weight: bold;
+        color: white;
+        font-family: Curlz MT;
+        animation: slider 15s infinite linear;
+ }
+
+    @keyframes slider{
+        0%{background-image: url('pic1.jpg');}
+        35%{background-image: url('pic1.jpg');}
+        75%{background-image: url('pic1.jpg');}
+    }
+    
+     
+
+       .columns{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        margin-bottom: 10px;
+        font-family: Helvetica;
+       }
+
+     .column__image{
+           display: block;
+          }
+      
+
+      .content{
+              line-height: 1.5;
+              font-size: 0.5;
+              padding: 15px;
+              background-color: #F1F8E9;
+              text-align: justify;
+              margin-bottom: 50px;
+             }
+
+             .about1{
+                background-color: peachpuff;
+             }
+
+            .h1,.about{
+                text-align: justify;
+                font-size: 20px;
+                line-height: 20px;
+                color: black;
+             }
+             
+             .img{
+                float: right;
+                border-radius: 50%;
+             }
+
+             
+             .open{
+                margin-top: 9px;
+                margin-left:10% ;
+                text-align: left;
+                font-size: 35px;
+                color: white;
+                text-decoration: overline wavy yellowgreen;
+             }
+
+             .close{
+                font-size: 35px;
+                color: white;
+                text-decoration: overline wavy yellowgreen;
+                margin-right: 10%;
+                text-align: right;
+                margin-top: -170px;
+                font-style: italic;
+                
+             }
+
+             .week{
+                font-size: 33px;
+                color: #03A9F4;
+                font-style: italic;
+                margin-left: 40%;
+                text-align: left;
+             }
+
+             .week1{
+                font-size: 33px;
+                color: #03A9F4;
+                font-style: italic;
+                margin-right:11% ;
+                text-align: right;
+             }
+             
+
+
+             .para{
+                color: white;
+                font-size: 20px;
+                line-height: 20px;
+             }
+
+             .contact{
+                background-color:dimgray;
+                width: 100%;
+             }
+             .reserve{
+                background-color: #AE8282;
+               }
+               .reserve1{
+                font-size: 30px;
+                font-style: oblique;
+                color: white;
+                margin-left: 10%;
+               }
+             .form{
+                font-size: 10px;
+                margin-left: 25%;
+             }
+
+             .content1{
+                width: 50%;
+                font-size: 20px;
+                height: 50px;
+             }
+
+             .img1{
+                border-radius: 50%;
+                float: right;
+                margin-right: 5%;
+             }
+             .button{
+                background-color: red;
+                font-size: 20px;
+                width: 40%;
+                cursor: pointer;
+             }
+            .map{
+            float:right;
+            margin-top:-450px;
+            margin-right: 1%;
+        }
+
+        .column1 {
+             padding: 5px;
+             cursor: pointer;
+             transition: transform .2s;
+             
+           }
+
+          .column1:hover{
+          transform: scale(1.1);
+          }
+            
+
+         	</style>
+</head>
+
+<body>
+   <div class="ro">
+  <div class="columns">
+ <h3 style="color:brown;"><big>ABC</big> <small>HOSTEL</small> </h3>
+</div>
+
+<div class="columns">
+ <div class="logreg" id="home">
+    <a href="login.php"><button class="topbtn">Login</button></a>
+<div class="dropdown">
+  <a href="NewStudent.php"><button class="dropbtn">Register</button></a>
+</div>
+</div>
+</div><hr>
+
+<div class="row">
+  <div class="column">
+    <i class='fa fa-eye'> Follow Us</i><br>
+      <i class="fa fa-facebook"></i>
+    <i class='fa fa-instagram'></i>
+    <i class='fa fa-twitter'></i>
+    <i class='fa fa-linkedin'></i>
+  </div>
+  <div class="column">
+    <i class='fa fa-map-marker'> Our Location</i>
+    <p> <i class="fa fa-angle-double-right"> Baneshwor, Kathmandu </i></p>
+  </div>
+  <div class="column">
+    <i class="fa fa-envelope"> Email Us </i> 
+    <p> <i class="fa fa-angle-double-right"> test@gmail.com </i> </p>
+  </div>
+   <div class="column">
+    <i class="fa fa-phone"> Phone</i>
+    <p> <i class="fa fa-angle-double-right"> 477890 </i></p>
+  </div>
+</div>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#team">Team</a></li>
+  <li><a href="#notice">Notice</a></li>
+</ul>
+
+         <div class="text">
+        <center>
+            <br>
+    		C'MON!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+            GRAB "A" BITE!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+   
+    	</div>
+      <br><br><br><br><br><br>
+            <div id="about">
+        <img src="pic22.png" height="100%" width="40% " align="left"/>
+        <h1 style="color:#FFC30B; font-family:Kunstler Script; font-size: 60px;"><center>About Us
+ </center></h1>
+        <center style="font-size: 30px;font-family: Segoe Script;">OUR STORY</center>
+        
+        <p align="right" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. 
+    <p align="right" style="text-align: justify;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. </p>Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="border-radius: 14%; padding:5px; padding-right: 15px; padding-left: 15px;background-color: white; border-color:#FFC30B ;">READ MORE <i class="fa fa-readmore" style="font-size:24px;"></i></button>
+
+   <h1 class="open" style="font-family:Juice ITC; color: black;">
+   Opening Hour:
+    </h1>  
+
+    <p class="week" style="font-family:Juice ITC;">Sunday-Friday</p>
+     <p class="week" style="font-family:Juice ITC;">9am to 8pm</p>
+<br>
+     <h1 class="close" style="font-family:Juice ITC; color: black;">
+    Closing Day:
+    </h1>  
+
+    <p class="week1" style="font-family:Juice ITC;">Saturday</p><br><br>
+
+    
+</div>
+<br><br><br><br><br>
+    
+<h1 id="menu" style="color:#FFC30B; font-family:Kunstler Script; font-size: 60px;"><center>Hungry?
+ </center></h1>
+        <center style="font-size: 30px;font-family: Segoe Script;">Our Menu</center>
+<div class="menu">
+    <div class="columns">
+      <div class="column">
+      <img src="pic2.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      MARGHERITA PIZZA<br>
+      PRICE: RS 468.00<br><br>
+    <input class="button" type=button value="ORDER" onClick="ORDER();">
+ </center>
+      </div>
+     
+      </div>
+
+      <div class="column">
+      <img src="pic3.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      MUSHROOM PIZZA<br>
+      PRICE: RS 521.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+     
+      </div>
+     
+      </div>
+
+      <div class="column">
+      <img src="pic4.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      BBQ CHICKEN PIZZA<br>
+      PRICE: RS 548.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+     
+      </div>
+     
+      </div>
+
+      <div class="column">
+      <img src="pic5.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      CHICKEN PIZZA<br>
+      PRICE:  RS 486.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+     
+      </div>
+     
+      </div>
+
+      <div class="column">
+      <img src="pic6.gif" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      CHEESE PIZZA<br>
+      PRICE: RS 460.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+    </p>
+     
+      </div>
+     
+      </div>
+
+      <div class="column">
+      <img src="pic7.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      PEPPERONI PIZZA<br>
+      PRICE: RS 680.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+</div>
+</div>
+
+        <div class="column">
+      <img src="pic11.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      VEGGIE PIZZA<br>
+      PRICE: RS 550.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+</div>
+</div>
+
+       <div class="column">
+      <img src="pic14.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      MEAT PIZZA<br>
+      PRICE: RS 900.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+</div>
+</div>
+    
+        <div class="column">
+      <img src="pic15.jpg" height="250px" width="400px">
+      <div class="content">
+      <p><center>
+      HAWAIIAN PIZZA<br>
+      PRICE: RS 950.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+</div>
+
+</div>
+</div><br><br><br>
+        <div><center>
+            <h1 style="font-family: Segoe Script; font-size: 60px; ">Today's Special</h1></center>
+            <div class="columns">
+               <div class="column1">
+      <img src="pic17.jpg" height="250px" width="390px">
+      <div class="content">
+      <p><center>
+      SICILIAN PIZZA<br>
+      PRICE: RS 800.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+  </div>
+</div>
+      <div class="column1">
+      <img src="pic18.jpg" height="250px" width="390px">
+      <div class="content">
+      <p><center>
+      DETROIT PIZZA<br>
+      PRICE: RS 880.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+  </div>
+</div>
+
+      <div class="column1">
+      <img src="pic19.jpg" height="250px" width="390px">
+      <div class="content">
+      <p><center>
+      GREEK PIZZA<br>
+      PRICE: RS 750.00<br><br>
+      <input class="button" type=button value="ORDER" onClick="ORDER();"></center>
+      </p>
+</div>
+
+</div>
+</div>
+
+        
+<br><br><br><br><br><br>
+ 
+    
+<div class="reserve">
+<h1 id="reserve" style="font-family: Segoe Script; font-size: 60px;">
+    <center><br>
+        Book A Table
+    </center>
+</h1>
+
+    <img src="reserve.png" height="25%" width="25%" class="img1">
+
+
+<p class="reserve1">Reserve a table, ask for today's special or just send us a message:</p>
+<br>
+<form class="form">
+
+<p><input type="text"  class="content1" placeholder="Name"  name="Name" ></p><br><br>
+
+<p><input type="number" class="content1" placeholder="How many people"  name="People"></p><br><br>
+
+<p><input  type="datetime-local" class="content1" placeholder="Date and time" name="date" value="2020-11-16T20:00" ></p><br><br>
+
+<p><input  type="text" class="content1" placeholder="Message \ Special requirements" name="Message"></p><br><br>
+
+<p><button  type="submit"class="content1" style="background-color: pink; width: 200px; margin-left: 14%;">SEND MESSAGE</button></p><br><br><br>
+
+</form>
+
+</div>
+<br><br><br><br><br><br>
+
+<div class="contact">
+<h1 id="contact" style="font-family: Segoe Script; font-size: 60px;">
+    <center><br>
+        Contact Us
+    </center>
+</h1><br>
+<div class="para">
+<p>Find us at: Thamel </p><br><br>
+<p>Call us at: 05050515-122330</p><br><br>
+<p>Email us at: test@gmail.com</p><br><br>
+<p>We offer full-service catering for any event, large or small. </p> <br><br>
+<p>We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p><br><br>
+<br><br>
+<center><i class="fa fa-facebook-square" style="font-size:48px; color: blue;"></i>
+<i class="fa fa-instagram" style="font-size:48px; background: linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);"></i>
+<i class="fa fa-twitter" style="font-size:48px; color: #00acee"></i>
+</center>
+</div>
+</div>
+
+<div class="map"><div class="gmap_canvas"><iframe id="gmap_canvas" src="https://maps.google.com/maps?q=thamel,kathmandu&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400px" height="300px" style="border:1;"></div></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ORDER DETAILS</title>
+<style type="text/css">
+
+        body{
+            background-size: cover;
+        }
+
+              .deliver{
+                color: white;
+                font-size: 20px;
+                 font-weight: bold;
+                 float: left;
+                 box-sizing: border-box;
+                 border-radius: 5px;
+                 border: 1px solid #ccc;
+                 background-color: #1B2631;
+               width:500px;
+                height: 725px;
+                 
+             }
+
+               .submitbtn{
+                width: 150px;
+                font-size: 18px;
+                text-align: center;
+                height: 40px;
+                background-color: #8D6E63;
+             }
+             .content1{
+                width: 50%;
+                font-size: 20px;
+                height: 50px;
+             }
+</style>
+</head>
+<script>
+function closeWindow() {
+alert('Your Order Has Been Placed!!!')
+close();
+}
+</script>
+    
+    <body>
+
+
+<div class="deliver" id="1">
+            <center>
+        <form>
+            <center>
+              <h3 style="text-decoration: underline; color: #E91E63;">ORDER DETAILS</h3>
+
+  <input  type="date" class="content1" placeholder="Date and time" name="date" value="2020-11-16" >
+        <br><br>
+     
+    <label><b>Full Name:</b></label><br>
+    <input type="text" placeholder=" Full Name" name="name" class="content1"><br><br>
+
+  <label><b>Phone Number:</b></label><br>
+    <input type="text" placeholder="Phone Number" name="ph-no" class="content1"><br><br>
+
+    <label><b>Address:</b></label><br>
+   <input  type="text" placeholder="Address" name="address" class="content1"><br><br>
+
+   <label><b>Quantity:</b></label><br>
+  <input type="number" placeholder="Quantity"  name="quantity" class="content1" ><br><br>
+
+  <label><b> Select Size:</b></label><br>
+    <input type="checkbox" name="size">Small
+    <input type="checkbox" name="size">Medium
+    <input type="checkbox" name="size">Large
+<br><br>
+      <input type="radio" name="coke">With Coke
+      <input type="radio" name="coke">Without Coke<br><br>
+     <input class="submitbtn" type=button value="Submit Order" onClick="closeWindow();">  
+       </div>
+</body>
+</html>
